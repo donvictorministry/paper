@@ -9,7 +9,12 @@ function txt(b) { return typeof b === 'string' ? b : (b.h || b.g || (b.r && b.r.
 
 function blk(b, i, id) {
   var k = 'id="dv-' + id + '-' + i + '"';
-  if (typeof b === 'string') return '<p ' + k + '>' + esc(b) + '</p>';
+  if (typeof b === 'string') {
+    var tx = esc(b).replace(/\n/g, '<br>'), sc = find(id), fi = -1, q;
+    for (q = 0; q < sc.blocks.length; q++) if (typeof sc.blocks[q] === 'string') { fi = q; break; }
+    if (id === 'about-the-author' && i === fi) return '<div class="dvMore" ' + k + '><p class="dvMoreBody">' + tx + '</p><button type="button" class="dvMoreBtn" aria-expanded="false" onclick="var m=this.parentNode,o=m.classList.toggle(\'dvOpen\');this.textContent=o?\'Show Less\':\'Show More\';this.setAttribute(\'aria-expanded\',o)">Show More</button></div>';
+    return '<p ' + k + '>' + tx + '</p>';
+  }
   if (b.h) return '<h2 ' + k + '>' + esc(b.h) + '</h2>';
   if (b.g) return '<h3 ' + k + '>' + esc(b.g) + '</h3>';
   if (b.r) return '<p class="dvRef" ' + k + '>' + esc(b.r).replace(/\*(.+?)\*/g, '<em>$1</em>') + '</p>';
