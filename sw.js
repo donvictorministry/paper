@@ -1,4 +1,4 @@
-var V = 'dv-research-v1',
+var V = 'dv-research-v1.1',
     F = ['./', 'index.html', 'styles.css', 'app.js', 'contents.js', 'page.js', 'nav.js', 'manifest.json'];
 
 self.addEventListener('install', function (e) {
