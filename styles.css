@@ -69,3 +69,7 @@ textarea.dvInput{min-height:8rem;resize:vertical;line-height:1.5}
 .dvArticle .dvAvName{margin:0;font-weight:700;font-size:1.15rem}
 .dvArticle .dvAvRole{margin:0;color:var(--dv-mut)}
 .dvRef em{font-style:italic}
+.dvMoreBody{max-height:calc(9 * 1.75em);overflow:hidden;margin:0 0 .5rem}
+.dvMore.dvOpen .dvMoreBody{max-height:none}
+.dvMoreBtn{padding:.6rem 1.4rem;border:2px solid var(--dv-blue);border-radius:2rem;background:none;color:var(--dv-link);font-weight:700;cursor:pointer}
+.dvMoreBtn:active{background:var(--dv-card)}
