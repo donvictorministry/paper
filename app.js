@@ -123,6 +123,7 @@ $('dvCloseRight').addEventListener('click', D.close);
 $('dvScrim').addEventListener('click', D.close);
 document.addEventListener('keydown', function (e) { if (e.key === 'Escape') D.close(); });
 D.article = $('dvArticle');
+window.scrollTo = function () { $('dvMain').scrollTop = 0; };
 
 /* Optional modules: any missing file is skipped without breaking the core */
 function dvLoad(i) {
