@@ -74,3 +74,9 @@ textarea.dvInput{min-height:8rem;resize:vertical;line-height:1.5}
 .dvMoreBtn{padding:.6rem 1.4rem;border:2px solid var(--dv-blue);border-radius:2rem;background:none;color:var(--dv-link);font-weight:700;cursor:pointer}
 .dvMoreBtn:active{background:var(--dv-card)}
 .dvHeader{position:fixed!important;top:0;left:0;right:0;z-index:20}
+
+html,body{height:100%;overflow:hidden;overscroll-behavior:none}
+.dvMain{position:fixed;top:calc(var(--dv-hh) + env(safe-area-inset-top));left:0;right:0;bottom:0;max-width:none;margin:0;padding:1.2rem 1rem calc(3rem + env(safe-area-inset-bottom));overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+.dvArticle{max-width:46rem;margin:0 auto}
+.dvArticle h2,.dvArticle h3,.dvArticle p{scroll-margin-top:.6rem}
+@media print{html,body{height:auto;overflow:visible}.dvMain{position:static;overflow:visible}}
