@@ -106,7 +106,6 @@ R.add({ icon: 'share', label: 'Share', fn: function () {
   else if (navigator.clipboard) navigator.clipboard.writeText(d.url).then(function () { D.toast('Link copied'); }, function () { D.toast('Could not copy the link'); });
   else D.toast('Sharing is not available');
 } });
-R.add({ icon: 'print', label: 'Print', fn: function () { setTimeout(function () { window.print(); }, 150); } });
 
 window.addEventListener('beforeinstallprompt', function (e) { e.preventDefault(); dp = e; });
 window.addEventListener('appinstalled', function () { D.toast('App installed'); });
