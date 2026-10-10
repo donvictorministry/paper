@@ -44,6 +44,10 @@ a{color:var(--dv-link)}
 .dvModalBody{padding:1rem;overflow-y:auto;overscroll-behavior:contain}
 .dvInput{width:100%;padding:.7rem .9rem;border:2px solid var(--dv-line);border-radius:.7rem;background:var(--dv-bg);color:var(--dv-fg)}
 .dvInput:focus{border-color:var(--dv-blue);outline:0}
+textarea.dvInput{min-height:8rem;resize:vertical;line-height:1.5}
+.dvForm label{display:block;margin:1rem 0 .3rem;font-weight:700}
+.dvSend{margin-top:1.3rem;padding:.8rem 1.8rem;border:0;border-radius:2rem;background:var(--dv-grad);color:#fff;font-weight:700;cursor:pointer}
+.dvSend:active{opacity:.85}
 .dvResults{margin-top:.8rem}
 .dvResInfo{margin:.2rem 0 .5rem;color:var(--dv-mut)}
 .dvRes{display:block;width:100%;padding:.7rem .6rem;background:none;border:0;border-bottom:1px solid var(--dv-line);color:var(--dv-fg);text-align:left;cursor:pointer}
@@ -56,3 +60,12 @@ a{color:var(--dv-link)}
 .dvToast.dvShow{opacity:1}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 @media print{.dvHeader,.dvSide,.dvScrim,.dvPager,.dvToast,.dvModalWrap{display:none!important}.dvMain{padding:0;max-width:none}}
+
+.dvAvatarWrap{margin:2.2rem 0 1.4rem;text-align:center}
+.dvAvatar{position:relative;width:160px;height:160px;margin:0 auto 1.4rem}
+.dvPhoto{position:relative;z-index:1;display:block;width:160px;height:160px;border-radius:50%;object-fit:cover}
+.dvGear{position:absolute;top:-18px;left:-18px;width:196px;height:196px;animation:dvSpin 14s linear infinite;pointer-events:none}
+@keyframes dvSpin{to{transform:rotate(360deg)}}
+.dvArticle .dvAvName{margin:0;font-weight:700;font-size:1.15rem}
+.dvArticle .dvAvRole{margin:0;color:var(--dv-mut)}
+.dvRef em{font-style:italic}
