@@ -5,7 +5,7 @@
 var D = window.DV; if (!D) return;
 var T = `Nigeria’s Population Growth and the Imperative of Christian Education: Challenges, Opportunities, and a Biblical Mandate`;
 D.contents = {
-meta: { title: T, author: `Rev. Don Victor, PhD`, photo: `https://i.ibb.co/84dRKY60/Screenshot-20260103-005841.png/`, role: `Prophet of God | Founder & Visionary | Trainer | Researcher | Full Stack Developer`, contacts: { Email: `donvictorministry@gmail.com`, Phone: `+2347035794649`, WhatsApp: `https://wa.me/2348086590253`, Facebook: `https://facebook.com/Rev.DonVictor` } },
+meta: { title: T, author: `Rev. Don Victor, PhD`, photo: `https://i.ibb.co/84dRKY60/Screenshot-20260103-005841.png/`, role: `Prophet of God | Founder & Visionary | Trainer | Researcher | Full Stack Developer`, contacts: { Email: `donvictorministry@gmail.com`, Phone: `tel:+2347035794649`, WhatsApp: `https://wa.me/2348086590253`, Facebook: `https://facebook.com/Rev.DonVictor` } },
 sections: [
 { id: `home`, menu: `Abstract`, title: T, by: `By Rev. Don Victor, PhD`, blocks: [
 { h: `Abstract` },
@@ -119,7 +119,7 @@ sections: [
 ] },
 { id: `about-the-author`, menu: `About the Author`, title: `About the Author`, blocks: [
 { avatar: 1 },
-`Rev. Don Victor, PhD is a dynamic and respected voice in the global Christian community. An ordained Reverend, missionary, and prolific writer, he holds a Master's degree in Theology and a PhD in n Christian Education. He has dedicated his life to the Great Commission, taking the gospel of Jesus Christ across continents. Rooted in Nigeria and reaching the nations, Dr. Chris  Johnson is an interdisciplinary researcher and an esteemed member of the Christian Educators movement in the United States of America. His ministry is marked by a powerful anointing for revival and a passionate commitment to helping every believer discover, nurture, and fulfill their God-given vision.`,
+`Rev. Don Victor, PhD, is an ordained minister of the Lord Jesus Christ, a respected voice in the global Christian community, an interdisciplinary researcher, trainer, web developer, and software engineer whose work integrates faith, scholarship, and technology for global impact. He holds a master's degree in theology and a Doctor of Philosophy (PhD) in Christian Education. He also possesses several certificates and professional certifications and serves as a senior researcher at his own organization, Prophetic Witness & Research International. Dr. Don Victor is committed to developing digital technologies that advance the gospel of Jesus Christ across nations. Rooted in Nigeria yet reaching the world for Christ, he is an esteemed member of the Christian Educators Movement in the United States of America. His ministry is marked by a passion for revival, healing, and helping believers discover, nurture, and fulfill their God-given destinies.`,
 { h: `Connect with the Author` },
 `For inquiries, speaking engagements, or partnership opportunities related to this research.`,
 { ic: [[`Email`, `mail`], [`Phone`, `phone`], [`WhatsApp`, `wa`], [`Facebook`, `fb`]] },
