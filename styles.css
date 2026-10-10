@@ -73,3 +73,4 @@ textarea.dvInput{min-height:8rem;resize:vertical;line-height:1.5}
 .dvMore.dvOpen .dvMoreBody{max-height:none}
 .dvMoreBtn{padding:.6rem 1.4rem;border:2px solid var(--dv-blue);border-radius:2rem;background:none;color:var(--dv-link);font-weight:700;cursor:pointer}
 .dvMoreBtn:active{background:var(--dv-card)}
+.dvHeader{position:fixed!important;top:0;left:0;right:0;z-index:20}
