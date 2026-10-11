@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://USERNAME.github.io/REPO/sitemap.xml
+Sitemap: https://paper.donvictorministry.org.ng/sitemap.xml
