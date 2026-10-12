@@ -1,6 +1,6 @@
 (function () {
 'use strict';
-var D = window.DV = { base: window.DVBASE || '/', ev: {}, cur: 'home', mods: ['contents.js', 'page.js', 'nav.js'] };
+var D = window.DV = { base: window.DVBASE || '/', ev: {}, cur: 'home', mods: ['contents.js', 'page.js', 'nav.js', 'terms.js', 'policy.js']};
 var $ = D.$ = function (i) { return document.getElementById(i); };
 
 D.on = function (n, f) { (D.ev[n] = D.ev[n] || []).push(f); };
